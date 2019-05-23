@@ -1,0 +1,25 @@
+{
+	"name": "26andfour-page",
+	"version": "1.0.0",
+	"description": "26andfour Page",
+	"main": "index.js",
+	"scripts": {
+		"deploy": "gh-pages -d dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kurniad-sign/26andfour-page.git"
+	},
+	"keywords": [
+		"26andfour"
+	],
+	"author": "Agung Kurniadi",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kurniad-sign/26andfour-page/issues"
+	},
+	"homepage": "https://github.com/kurniad-sign/26andfour-page#readme",
+	"devDependencies": {
+		"gh-pages": "^2.0.1"
+	}
+}
