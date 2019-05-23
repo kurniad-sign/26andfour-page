@@ -18,7 +18,7 @@
 	"bugs": {
 		"url": "https://github.com/kurniad-sign/26andfour-page/issues"
 	},
-	"homepage": "https://github.com/kurniad-sign/26andfour-page#readme",
+	"homepage": "https://kurniad-sign.github.io/26andfour-page",
 	"devDependencies": {
 		"gh-pages": "^2.0.1"
 	}
