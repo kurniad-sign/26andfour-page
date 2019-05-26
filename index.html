@@ -3,126 +3,162 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Go serverless and pay what you use" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Frontend Dev Course</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+		<title>26andfour Homepage</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<div class="container">
-			<header>
-				<img src="images/logo.svg" alt="Logo" class="logo" />
-				<nav>
-					<a href="#" class="hide-desktop">
-						<img
-							src="images/ham.svg"
-							alt="hamburger menu"
-							class="menu"
-							id="menu"
-						/>
-					</a>
+		<header>
+			<nav class="c-nav" role="navigation">
+				<div class="ly-container c-nav__row">
+					<div class="c-nav--logo">
+						<a href="#">
+							<img src="images/logo.svg" alt="Logo" class="logo" />
+						</a>
+					</div>
+					<div class="c-nav__burger ut-desktop--hidden">
+							<img src="images/ham.svg" alt="burger icon" />
+					</div>
+					<ul class="c-nav__list ut-mobile--hidden">
+						<li class="c-nav__list-item"><a href="#">Product</a></li>
+						<li class="c-nav__list-item"><a href="#">Feature</a></li>
+						<li class="c-nav__list-item"><a href="#">Services</a></li>
+						<li class="c-nav__list-item"><a href="#">About</a></li>
+					</ul>
+				</div>
+			</nav>
 
-					<ul class="show-desktop hide-mobile" id="nav">
-						<li id="exit" class="exit-btn hide-desktop">
+			<nav class="c-nav__mobile">
+        <ul class="c-nav__list">
+          <div class="c-nav__close">
+            <img src="images/exit.svg" alt="close btn">
+          </div>
+					<li class="c-nav__list-item"><a href="#">Product</a></li>
+					<li class="c-nav__list-item"><a href="#">Feature</a></li>
+					<li class="c-nav__list-item"><a href="#">Services</a></li>
+					<li class="c-nav__list-item"><a href="#">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="pg-hero">
+				<div class="ly-container ut--mobile-text-center">
+					<div class="ly-hero-grid">
+            <div class="pg-hero__illustration">
+									<img
+										src="images/server.svg"
+										alt="server illustration"
+										class="pg-hero--illustration-server"
+									/>
+            </div>
+						<header class="pg-hero__headline ut-mobile--text-center">
+							<h1 class="pg-hero__title">Web Hosting for the modern era</h1>
+							<p class="pg-hero__sub-title">
+								Go Serverless and pay only what you use.
+							</p>
+						</header>
+					</div>
+					<div class="pg-hero__scroll">
+						<a href="#features">
 							<img
-								src="images/exit.svg"
-								alt="exit menu"
+								src="images/scroll.svg"
+								alt="scroll image"
+								class="ut--mobile-hidden"
 							/>
-						</li>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="pg-section pg-feature ut--primary" id="features">
+				<div class="ly-container ut-mobile--text-center">
+					<h2 class="pg-feature__title ut-text--white ut-text--center">Features you must know</h2>
+					<div class="pg-feature__block ut-text--white ut-text--center">
+						<div class="pg-feature__item">
+							<img src="images/icon-1.svg" alt="Calendar Icon" />
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Laboriosam explicabo adipisci enim amet.
+							</p>
+						</div>
+						<div class="pg-feature__item">
+							<img src="images/icon-2.svg" alt="Calendar Icon" />
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Laboriosam explicabo adipisci enim amet.
+							</p>
+						</div>
+						<div class="pg-feature__item">
+							<img src="images/icon-3.svg" alt="Calendar Icon" width="30"/>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Laboriosam explicabo adipisci enim amet.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="pg-section ut--gray">
+				<div class="ly-container">
+					<h2 class="pg-testimonial__title ut--no-text-content">Testimonial</h2>
+					<div class="pg-testimonial__block ut-mobile--text-center">
+						<figure class="pg-testimonial__item">
+							<img src="images/user1.png" alt="user image 1" />
+							<blockquote class="pg-testimonial__quote">
+								&quot;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
+								explicabo laudantium modi reprehenderit aliquam suscipit.&quot;
+							</blockquote>
+							<figcaption class="pg-testimonial__author">- John Doe</figcaption>
+						</figure>
+						<figure class="pg-testimonial__item">
+							<img src="images/user2.png" alt="user image 2" />
+							<blockquote class="pg-testimonial__quote">
+								&quot;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
+								explicabo laudantium modi reprehenderit aliquam suscipit&quot;
+							</blockquote>
+							<figcaption class="pg-testimonial__author">- John Doe</figcaption>
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<section class="pg-section pg-cta">
+				<div class="ly-container ut-text--center">
+					<header class="pg-cta--headline">
+						<h2>Start your free trial now!</h2>
+					</header>
+					<a href="#" class="pg-cta__button c-button ut--secondary">Get Started</a>
+				</div>
+			</section>
+		</main>
+
+		<footer class="pg-footer u--dark">
+			<div class="ly-container">
+				<div class="pg-footer__wrap">
+
+					<div class="pg-footer__logo-white">
+						<a href="#">
+							<img src="images/logo-white.svg" alt="Logo white" class="logo" />
+					</a>
+				</div>
+				<address class="address ut-text--white">Melrose Place, 90210<br />USA</address>
+				<nav class="c-footer__nav">
+					<ul class="c-footer__links">
+						<li><a href="#">Terms of Services</a></li>
+						<li><a href="#">Privacy Policy</a></li>
 					</ul>
 				</nav>
-			</header>
+			</div>
+			</div>
+		</footer>
 
-			<section>
-				<img src="images/server.svg" alt="server ilustration" class="server" />
-				<h1>Web Hosting for the modern era</h1>
-				<p class="subhead">Go Serverless and pay only what you use.</p>
-				<img
-					src="images/scroll.svg"
-					alt="scroll image"
-					class="scroll hide-mobile show-desktop"
-				/>
-			</section>
-    </div>
-    
-    <div class="blue-container">
-      <div class="container">
-        <ul>
-          <li>
-            <img src="images/icon-1.svg" alt="Calendar Icon">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo adipisci enim amet.</p>
-          </li>
-          <li>
-            <img src="images/icon-2.svg" alt="Calendar Icon">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo adipisci enim amet.</p>
-          </li>
-          <li>
-            <img src="images/icon-3.svg" alt="Calendar Icon">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo adipisci enim amet.</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="gray-container">
-      <div class="container">
-       <ul>
-         <li>
-           <figure>
-             <img src="images/user1.png" alt="user image 1">
-             <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam explicabo laudantium modi reprehenderit aliquam suscipit,</blockquote>
-             <figcaption>- John Doe</figcaption>
-           </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/user2.png" alt="user image 2">
-              <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam explicabo laudantium modi reprehenderit aliquam suscipit,</blockquote>
-              <figcaption>- John Doe</figcaption>
-            </figure>
-          </li>
-       </ul> 
-      </div>
-    </div>
-
-    <div class="container">
-      <h2>Start your free trial now!</h2>
-      <a href="#" class="cta">Get Started</a>
-    </div>
-
-    <footer>
-      <div class="footer-container">
-        <div class="container">
-          <a href="#">
-            <img src="images/logo-white.svg" alt="Logo white" class="logo">
-          </a>
-          <p class="address">Melrose Place, 90210<br>USA</p>
-          <ul class="footer-links">
-            <li><a href="#">Terms of Services</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      var menu = document.getElementById('menu');
-      var nav = document.getElementById('nav');
-      var exit = document.getElementById('exit');
-
-      menu.addEventListener('click', function(e) {
-        nav.classList.toggle('hide-mobile');
-        e.preventDefault()
-      })
-
-      exit.addEventListener('click', function(e) {
-        nav.classList.add('hide-mobile');
-        e.preventDefault()
-      })
-    </script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
